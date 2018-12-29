@@ -1,0 +1,281 @@
+.D1{
+        position:absolute;  
+        top:0%;
+        left:0%;
+        width:75%;
+        height:40vw; 
+        overflow:hidden;
+        border:3px #cccccc dashed;
+        background-image: url('background.PNG');
+        z-index:-5;
+}
+.D2{
+        position:absolute;  
+        top:0%;
+        left:0%;
+        width:75%;
+        height:40vw;
+        overflow:hidden;
+        border:3px #cccccc dashed;
+        /* background-image: url('background2.PNG'); */
+        z-index:-4;
+}
+.D3{  /*--旁邊的選項- */
+        position:absolute;  
+        top:0%;
+        left:0%;
+        width:75%;
+        height:40vw;
+        overflow:hidden;
+        border:3px #cccccc dashed;
+        /* background-image: url('background2.PNG'); */
+        z-index:-2;
+}
+
+.D4{/* 下方的文字敘述 */
+        width:73%; 
+        height:12vw; 
+        border:3px #cccccc dashed;  
+        position:absolute; 
+        left:1%; 
+        top:57%;
+        z-index:-2;
+}
+
+.scanf {
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+        padding: 12px 24px;
+        border: 2px solid #31669e;
+        background: #aeceee;
+        font: normal normal normal 20px arial;
+        font-size:120%;
+        color: #17181b;
+        text-decoration: none;
+        outline: none;
+        
+        position: absolute;
+        left:15%; 
+        top:50%; 
+        width:35%;
+        height:8%;
+
+}
+
+ .story{
+        width:97%; 
+        height:40%; 
+        border:3px #cccccc dashed; 
+        position:absolute; 
+        left:1%; 
+        top:57%;
+} 
+
+.button {/*一開始的button  之後用不到了*/
+        /*一開始的樣式*/
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+        padding: 12px 24px;
+        border: 2px solid #31669e;
+        border-radius: 8px;
+        /*弧形 */
+        background: #4fa6ff;
+        background: -moz-linear-gradient(top, #4fa6ff, #b0c4d9);
+        background: linear-gradient(to bottom, #4fa6ff, #b0c4d9);
+        text-shadow: #8ea5bf 1px 1px 1px;
+        font: normal normal normal 20px arial;
+        font-size:120%;
+        color: #2059d4;
+        text-decoration: none;
+        outline: none;
+        
+        width:20%;
+        height:12%;
+        position: absolute; 
+        left:60%; 
+        top:50%;
+}
+
+.button:hover,
+.button:focus {
+            border: 2px solid #84baf0;
+            background: #5fc7ff;
+            background: -moz-linear-gradient(top, #5fc7ff, #d3ebff);
+            background: linear-gradient(to bottom, #5fc7ff, #d3ebff);
+            color: #ffffff;
+            text-decoration: none;
+            outline: none;
+}
+
+.button:active {
+            background: #31669e;
+            /* background: -webkit-gradient(linear, left top, left bottom, from(#31669e), to(#b0c4d9)); */
+            background: -moz-linear-gradient(top, #31669e, #b0c4d9);
+            background: linear-gradient(to bottom, #31669e, #b0c4d9);
+            outline: none;
+}
+/*//////////////////////////////////////////////////////////*/
+.button_select1 {
+            /*一開始的樣式*/
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+            padding: 12px 24px;
+            border: 2px solid #262b31;
+            border-radius: 8px;
+            /*弧形 */
+            background: #97dbbb;
+            text-shadow: #8ea5bf 1px 1px 1px;
+            font: normal normal normal 20px arial;
+            font-size:120%;
+            color: #080b13;
+            text-decoration: none;
+            outline: none;
+
+            width: 40%;
+            height:15%;
+            position: absolute; 
+            left:55%; 
+            top:6%;
+            z-index:-2;
+}
+.button_select1:hover,
+.button_select1:focus {
+            border: 2px solid #53575c;
+            background: #515658;
+            color: #ffffff;
+            text-decoration: none;
+            outline: none;
+            width: 40%;
+}
+.button_select1:active {
+            background: #8d949c;
+            outline: none;
+}
+
+/*////////////////////////////////////////////////*/
+.button_select2 {
+        /*一開始的樣式*/
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+        padding: 12px 24px;
+        border: 2px solid #262b31;
+        border-radius: 8px;
+        /*弧形 */
+        background: #97dbbb;
+        text-shadow: #8ea5bf 1px 1px 1px;
+        font: normal normal normal 20px arial;
+        font-size:120%;
+        color: #080b13;
+        text-decoration: none;
+        outline: none;
+
+        width: 40%;
+        height:15%;
+        position: absolute; 
+        left:55%; 
+        top:23%;
+        z-index:-2;
+}
+.button_select2:hover,
+.button_select2:focus {
+        border: 2px solid #53575c;
+        background: #515658;
+        color: #ffffff;
+        text-decoration: none;
+        outline: none;
+        width: 40%;
+}
+.button_select2:active {
+        background: #8d949c;
+        outline: none;
+}
+/*//////////////////////////////////////////////////////////*/
+.button_select3 {
+        /*一開始的樣式*/
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+        padding: 12px 24px;
+        border: 2px solid #262b31;
+        border-radius: 8px;
+        /*弧形 */
+        background: #97dbbb;
+        text-shadow: #8ea5bf 1px 1px 1px;
+        font: normal normal normal 20px arial;
+        font-size:120%;
+        color: #080b13;
+        text-decoration: none;
+        outline: none;
+
+        width: 40%;
+        height:15%;
+        position: absolute; 
+        left:55%; 
+        top:40%;
+        z-index:-2;
+}
+.button_select3:hover,
+.button_select3:focus {
+        border: 2px solid #53575c;
+        background: #515658;
+        color: #ffffff;
+        text-decoration: none;
+        outline: none;
+        width: 40%;
+}
+.button_select3:active {
+        background: #8d949c;
+        outline: none;
+}
+/*//////////////////////////////////////////////////////////*/
+.button_skip {
+        /*一開始的樣式*/
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+        padding: 6px 12px;
+        
+        border-radius: 8px;
+        /*弧形 */
+        background: #97dbbb;
+        text-shadow: #8ea5bf 1px 1px 1px;
+        font: normal normal normal 20px arial;
+        font-size:120%;
+        color: #080b13;
+        text-decoration: none;
+        outline: none;
+
+        width: 20%;
+        height:10%;
+        position: absolute; 
+        left:55%; 
+        top:75%;
+        z-index:-3;
+}
+.button_skip:hover,
+.button_skip:focus {
+        border: 2px solid #53575c;
+        background: #515658;
+        color: #ffffff;
+        text-decoration: none;
+        outline: none;
+        width: 20%; 
+}
+.button_skip:active {
+        background: #8d949c;
+        outline: none;
+}
+
+.title{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size:60px;
+}
+
+
+
+/*//////////////////////////////////////////////////////////*/
+
