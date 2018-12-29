@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>main</title>
+    <link rel=stylesheet type="text/css" href="style.css">
+    <script type="text/javascript" src="typing.js"> </script>
+    <script language="javascript">
+        var i = 0;
+        var str;
+        var stop = 0;
+
+        function start() {
+            var button = document.getElementById("startbutton");
+            button.addEventListener("click", the_backgroundstory, false);
+        }
+
+        function the_backgroundstory() {///敘述背景故事
+            var sk = document.getElementById("sk");
+            sk.innerHTML = "<input type='button' id = 'skip'  value='skip' class='button_skip'>";
+
+            //typing(name);//名字記得改
+            str = '茜茜是一名剛上大一的新鮮女大生，她一直都是個很乖的女生，努力用功讀書上了明星高中、接著用繁星上了頂大。但她這麼努力的原因一直都只有一個……她的爸爸從小就愛喝酒鬧事，只要一喝醉就會打她跟媽媽，而且爸爸在外頭不知養了多少小三小四了，可媽媽老是視而不見、裝不知情。她捨不得媽媽這樣痛苦，於是她決定一定要好好讀書，未來靠她自己的力量拯救媽媽，所以才一直這麼這麼努力地讀書，想成為媽媽的驕傲。但在升大學的那個暑假，發生了一件改變茜茜的重大事件……那天晚上，爸爸又喝酒醉了，半夜一直按門鈴，茜茜怕門鈴聲把媽媽吵醒，所以很快地衝下樓去幫爸爸開門。殊不知一打開門，爸爸就開始對茜茜上下其手，茜茜開始大聲的向媽媽求救，但一直不見媽媽的身影。這樣的夜晚漫長且令人恐懼，隔天一早茜茜就哭著向媽媽說了昨天晚上發生的事情，並堅決要去報警。「打我什麼的我都可以忍，但爸他強姦我！我一定要去報警！」茜茜哭著說道，但被媽媽一個巴掌搧過去『那是我老公！我說他沒有就是沒有！妳要敢報警我就打斷妳的腿！』茜茜頓時感到很絕望，自己的媽媽愛老公愛到連自己女兒都被侵犯了也要視而不見。自此之後的茜茜心態大轉變，覺得人生跟基隆的天氣一樣糟糕。現在，就由你來決定茜茜的下一步吧！';
+            typing(str);
+
+            var skip = document.getElementById("skip");
+            skip.addEventListener("click", step_1, false);
+        }
+
+
+        function step_1() {//////換背景圖片並敘述故事(要記得移除button)
+            stop = 1;
+            var two = document.getElementById("two");
+            two.innerHTML = "<input type='button' id = 'select_1'  value='上學' class='button_select1'>"
+                + "<input type='button' id = 'select_2'  value='翹家' class='button_select2'>"
+                + "<input type='button' id = 'select_3'  value='耍廢' class='button_select3'>"
+                + "<div id='word'></div>";
+            //////////div裡才有word//////////////////////////
+            //var two = document.getElementById("two");
+            //two.innerHTML="";
+            var sk = document.getElementById("sk");
+            sk.innerHTML = "";
+
+            //////////////////////////////對話框//////////////////
+            var word = document.getElementById("word");
+            word.innerHTML = "<div id='word' class='story'>今天茜茜要做什麼呢?</div>";
+            //////////////////////////////對話框//////////////////
+
+            ///////////////敘述完button才出現/////////////////////
+            var button_1 = document.getElementById("select_1");
+            button_1.addEventListener("click", step_2_1, false);
+
+            var button_2 = document.getElementById("select_2");
+            button_2.addEventListener("click", step_2_2, false);
+
+            var button_3 = document.getElementById("select_3");
+            button_3.addEventListener("click", step_2_3, false);
+            /////////////////////////////按鈕結束////////////////////
+            //stop=0;
+
+        }
+
+        function step_2_1() {//////去上學
+            i = 0;
+            stop = 0;
+            var two = document.getElementById("two");
+            two.innerHTML = "<input type='button' id = 'select_2_1_1'  value='到社辦看一看' class='button_select1'>"
+                + "<input type='button' id = 'select_2_1_2'  value='去學校頂樓 16樓吹吹風' class='button_select2'>"
+                + "<div id='word' class='story'></div>";
+
+            str = '坐在教室太無聊了，跟老師說想上廁所順便出去晃一晃好了';
+            typing_con(str);
+
+            var button_2_1_1 = document.getElementById("select_2_1_1");
+            button_2_1_1.addEventListener("click", step_2_1_1, false);
+
+            var button_2_1_2 = document.getElementById("select_2_1_2");
+            button_2_1_2.addEventListener("click", step_2_1_2, false);
+
+        }
+
+        function step_2_1_1() {/////到社辦看一看
+            i = 0;
+            stop = 0;
+
+            var two = document.getElementById("two");
+            two.innerHTML = "<input type='button' id = 'select_2_1_1'  value='叫醒他' class='button_select1'>"
+                + "<input type='button' id = 'select_2_1_2'  value='讓他睡死ㄅ' class='button_select2'>"
+                + "<div id='word' class='story'></div>";
+
+            str = '茜茜：平常社課的時候都碰不太到什麼吉他，只能聽博凱可怕的自彈自唱，現在來偷偷練習一下好了。';
+            typing_con(str);
+            
+            var str2 = '博凱：茜茜，妳在說些什麼阿？';
+            typing_con(str2);
+
+            var button_2_1_1 = document.getElementById("select_2_1_1");
+            button_2_1_1.addEventListener("click", step_2_1_1, false);
+
+            var button_2_1_2 = document.getElementById("select_2_1_2");
+            button_2_1_2.addEventListener("click", step_2_1_2, false);
+
+        }
+
+
+
+
+        //////////////////////////////////////////////////////////////////////////////////////////////
+        // function step_2_2() {
+        //     var hello = document.getElementById("hello");
+        //     hello.innerHTML = "<img src='background2.png'>"
+        //         + "<input type='button' id = 'select_2_1_1'  value='逃跑' class='button_select1'>"
+        //         + "<input type='button' id = 'select_2_1_2'  value='rrrrrrrrrrrrr' class='button_select2'>";
+
+        // }
+        // function step_2_3() {
+        //     var hello = document.getElementById("hello");
+        //     hello.innerHTML = "<img src='background2.png'>"
+        //         + "<input type='button' id = 'select_2_1_1'  value='逃跑' class='button_select1'>"
+        //         + "<input type='button' id = 'select_2_1_2'  value='rrrrrrrrrrrrr' class='button_select2'>";
+
+        // }
+
+        window.addEventListener("load", start, false);
+    </script>
+
+</head>
+
+<body>
+
+    <div class="D1" id="hello">
+        <!--遊戲背景位置  最下面-->
+        <!-- 不要用包的  直接用疊的 -->
+    </div>
+    <!--遊戲位置-->
+
+
+
+
+    <div class="D2" id="two">
+        <!--文字位置-->
+        <p style="position: absolute; left:3%; top:50%;">輸入名字</p>
+        <input id="name" type="text" value="茜茜" class="scanf">
+
+        <input type="button" id="startbutton" value="start game" class="button" />
+
+        <p id="word" style="position:absolute; left:200px; top:10px;" class="title">8+9妹妹的人生~</p>
+    </div>
+    <!--文字位置-->
+
+    <!-- <div class="D4" id="four">下方的故事敘述
+        
+    </div>下方的故事敘述 要比背景上面  -->
+
+
+    <div id="sk"></div>
+    <!--skip按鈕-->
+
+    <!-- 留言板的位置 -->
+    <div style=" line-height: 0; position: fixed; top: 20%; right: 0px; width:25%; height:65%;">
+        <iframe src="http://my.cbox.ws/test_messageboard" width="97%" height="97%"></iframe>
+    </div><!-- 留言板本體 -->
+
+</body>
+
+</html>
